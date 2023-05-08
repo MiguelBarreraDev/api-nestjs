@@ -1,0 +1,18 @@
+name: run code coverage an test run
+
+on:
+  push:
+    branches:
+      - 'feat/**'
+      - 'hotfix/**'
+      - 'bugfix/**'
+      - 'fix/**'
+      - 'test/**'
+      - 'chore/**'
+      - 'develop'
+      - 'refactor/**'
+jobs:
+  ci:
+    uses: ./.github/workflows/build-node.yml
+    with:
+      codeCoverage: 80

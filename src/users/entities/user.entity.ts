@@ -1,0 +1,34 @@
+export class User {
+  id: number;
+  ipAddress: string;
+  username: string | null;
+  email: string;
+  activationCode: string | null;
+  forgottenPasswordCode: string | null;
+  forgottenPasswordTime: number | null;
+  rememberCode: string | null;
+  createdOn: number;
+  lastLogin: number | null;
+  active: number | null;
+  firstName: string | null;
+  lastName: string | null;
+  company: string | null;
+  phone: string | null;
+  creadoEl: Date;
+  actualizadoEl: Date | null;
+  eliminadoEl: Date | null;
+  verResultados: boolean | null;
+  admin: boolean;
+  idCargo: boolean | null;
+  updatedAt: Date | null;
+  rememberToken: string | null;
+  tipoPrecio: string;
+  comments: string | null;
+  sexo: string | null;
+  foto: string | null;
+  reset: number | null;
+  menuPerfilId: number | null;
+  fechaBirthday: string | null;
+  fechaMultilab: string | null;
+  groupId: number;
+}
